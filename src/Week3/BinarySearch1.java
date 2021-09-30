@@ -1,17 +1,18 @@
 import java.util.Arrays;
 
 class BinarySearch1 {
-    int binarySearch(int arr[], int x) {
+    int binarySearch(int arr[], int number) {
         Arrays.sort(arr);
-        int l = 0, r = arr.length - 1;
-        while (l <= r) {
-            int m = l + (r - l) / 2;
-            if (arr[m] == x)
+        int l = 0, h = arr.length - 1;
+        while (l <= h) {
+            int m = l + (h - l) / 2;
+            if (arr[m] == number)
                 return m;
-            if (arr[m] < x)
+            if (arr[m] < number)
                 l = m + 1;
-            else
-                r = m - 1;
+            else {
+                h = m - 1;
+            }
         }
         return -1;
     }
