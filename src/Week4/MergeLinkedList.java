@@ -1,3 +1,4 @@
+package GIT.DSA_20020284.src.Week4;
 public class MergeLinkedList {
 
     static class SinglyLinkedListNode {
@@ -27,4 +28,5 @@ static SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedL
         
     }
 
+}
 }
