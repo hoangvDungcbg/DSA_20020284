@@ -1,3 +1,4 @@
+package GIT.DSA_20020284.src.Week4;
 public class insertNodeAtTail {
 
     static class SinglyLinkedListNode {
