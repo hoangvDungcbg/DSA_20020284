@@ -1,3 +1,14 @@
+public class Compare2LinkedList {
+
+    static class SinglyLinkedListNode {
+        public int data;
+        public SinglyLinkedListNode next;
+
+        public SinglyLinkedListNode(int nodeData) {
+            this.data = nodeData;
+            this.next = null;
+        }
+    }
 static boolean compareLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
     if(head1==null && head2==null){
         return true;
@@ -10,4 +21,5 @@ static boolean compareLists(SinglyLinkedListNode head1, SinglyLinkedListNode hea
     }
     return false;
 
+}
 }
