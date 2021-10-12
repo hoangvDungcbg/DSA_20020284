@@ -1,4 +1,5 @@
-import java.util.Stack;
+import java.util.*;
+
 class BalancedBrackets{
 public static String isBalanced(String s) {
     // Write your code here
