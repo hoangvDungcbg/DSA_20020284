@@ -1,0 +1,5 @@
+Selection sort: 
+
+Time complexity O(N^2) 
+
+Thời gian chạy ổn định qua tất cả các trường hợp
