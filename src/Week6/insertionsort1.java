@@ -23,13 +23,7 @@ class Result {
     public static void insertionSort1(int n, int[]arr) {
     // Write your code here
         int x=arr[n-1];
-        for(int i = n-1;i>=1;i--){
-            if(i==0 && arr[0]>=x){
-                arr[0]=x;
-                print(arr);
-                System.out.println("");
-            } 
-            
+        for(int i = n-1;i>=1;i--){       
             if(x<=arr[i-1]){
                 arr[i]=arr[i-1];
                 print(arr);
