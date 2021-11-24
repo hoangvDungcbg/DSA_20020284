@@ -29,7 +29,30 @@ class Result {
         Collections.sort(bk);
         return bk;
     }
+    //Counting sort method O(n)
+    public static List<Integer> missingNumberswithcountingsort(List<Integer> arr, List<Integer> brr) {
+        // Write your code here
+            List<Integer> ls = new ArrayList<Integer>();
+            int[] a = new int[100000];
+            for(int i =0 ;i < a.length ;i++){
+                a[i] = 0;
+            }
+            for(int i: arr){
+                a[i]--;
+            }
+            for(int i:brr){
+                a[i]++;
+            }
+            for(int i = 0;i<a.length;i++){
+                if(a[i]>0){
+                    ls.add(i);
+                }
+            }
+            Collections.sort(ls);
+            return ls;
+            
     
+        }
 
 }
 
